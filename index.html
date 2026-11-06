@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Tasleem Bibi — Frontend Developer, BSCS final-year student, Sukkur, Pakistan.">
+  <title>Tasleem Bibi | Frontend Developer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <a href="#home" class="logo">TB<span>.</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-btn" id="themeBtn" aria-label="Toggle dark / light mode">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero container">
+      <div class="hero-text">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>Tasleem Bibi</h1>
+        <h2>Frontend Developer</h2>
+        <p>Final-year BSCS student from Sukkur, Sindh, building responsive, accessible websites with HTML, CSS and JavaScript — and learning data analysis with Python.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View My Work</a>
+          <a class="btn btn-outline" href="https://www.linkedin.com/in/tasleem-bibi-431b2a361/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+      </div>
+      <div class="hero-card" aria-label="Profile placeholder">
+        <div class="avatar">TB</div>
+        <p class="hero-card-name">Tasleem Bibi</p>
+        <p class="hero-card-role">Frontend Developer · Sukkur, Pakistan</p>
+        <p class="hero-card-note">PITP Certified Web Developer &amp; Data Scientist</p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section container">
+      <h2>About Me</h2>
+      <p>I'm a final-year BSCS student at Begum Nusrat Bhutto Women University, Sukkur (Aug 2022 – 2026). I completed PITP certifications in Web Development and Data Science at Sukkur IBA University (Sep – Nov 2025) and interned as a Frontend Developer at Decode Labs, Sukkur (Apr – May 2026).</p>
+      <p>I enjoy turning ideas into clean, mobile-friendly websites, and I am now building freelance experience on Fiverr while I finish my degree.</p>
+      <ul class="about-list">
+        <li><strong>Location:</strong> Sukkur, Sindh, Pakistan</li>
+        <li><strong>Education:</strong> BSCS, Begum Nusrat Bhutto Women University Sukkur</li>
+        <li><strong>Freelance:</strong> Fiverr — @taslem_services</li>
+      </ul>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section container">
+      <h2>Skills</h2>
+      <div class="filter-buttons" role="group" aria-label="Filter skills">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="programming">Programming</button>
+        <button class="filter-btn" data-filter="data">Data &amp; Tools</button>
+      </div>
+      <ul class="skills-grid" id="skillsGrid">
+        <li data-category="frontend">HTML</li>
+        <li data-category="frontend">CSS</li>
+        <li data-category="frontend">JavaScript</li>
+        <li data-category="frontend">Responsive Web Design</li>
+        <li data-category="programming">Python</li>
+        <li data-category="programming">Java</li>
+        <li data-category="programming">C++</li>
+        <li data-category="programming">PHP</li>
+        <li data-category="data">SQL / MySQL</li>
+        <li data-category="data">Data Analysis</li>
+        <li data-category="data">Git / GitHub</li>
+      </ul>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>Responsive Portfolio Website</h3>
+          <p>This website — a mobile-first personal portfolio with dark/light mode, a skills filter and a validated contact form.</p>
+          <p class="tags">HTML · CSS · JavaScript</p>
+          <p><em>You are looking at it.</em></p>
+        </article>
+        <article class="project-card">
+          <h3>Modern Landing Page</h3>
+          <p>A responsive landing page for a small Sukkur boutique (demo project): products in PKR, testimonials, FAQ accordion and an order form.</p>
+          <p class="tags">HTML · CSS · JavaScript</p>
+          <a href="../modern-landing-page/index.html">Open project →</a>
+        </article>
+        <article class="project-card">
+          <h3>Python Data Analysis</h3>
+          <p>Analysis of 100 rows of sample shop sales data with pandas and matplotlib — totals, averages, best sellers and charts.</p>
+          <p class="tags">Python · pandas · matplotlib</p>
+          <a href="../python-data-analysis/README.md">Read the analysis →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section container">
+      <h2>Experience &amp; Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Frontend Developer Intern — Decode Labs, Sukkur</h3>
+          <p class="date">Apr – May 2026</p>
+          <p>Frontend development internship.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>PITP Certified Web Developer &amp; Data Scientist — Sukkur IBA University</h3>
+          <p class="date">Sep – Nov 2025</p>
+          <p>Certified training in web development and data science.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>BSCS — Begum Nusrat Bhutto Women University, Sukkur</h3>
+          <p class="date">Aug 2022 – 2026 (final year)</p>
+          <p>Bachelor of Science in Computer Science.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+      <p>Want a responsive website, a landing page, or a bug fix? Reach out:</p>
+      <p>
+        <a href="https://www.linkedin.com/in/tasleem-bibi-431b2a361/" target="_blank" rel="noopener">LinkedIn: tasleem-bibi-431b2a361</a><br>
+        <a href="https://www.fiverr.com/taslem_services" target="_blank" rel="noopener">Fiverr: @taslem_services</a>
+      </p>
+      <form id="contactForm" novalidate>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required placeholder="Your name">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required placeholder="you@example.com">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required placeholder="Tell me about your project…"></textarea>
+        <p class="form-error" id="formError" role="alert"></p>
+        <p class="form-success" id="formSuccess" role="status"></p>
+        <button class="btn btn-primary" type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Tasleem Bibi · Sukkur, Pakistan · Built with HTML, CSS &amp; JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

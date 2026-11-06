@@ -1,0 +1,66 @@
+/* Tasleem Bibi — Portfolio | mobile-first, CSS variables for dark/light mode */
+:root {
+  --bg: #ffffff; --text: #1a1a2e; --muted: #555; --accent: #6c2bd9;
+  --accent-soft: #f0e8ff; --card: #f8f7fc; --border: #e3e0ee;
+}
+body.dark {
+  --bg: #14141f; --text: #f0eef8; --muted: #b8b3cc; --accent: #a78bfa;
+  --accent-soft: #2a2140; --card: #1e1e2e; --border: #33334d;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+.container { max-width: 960px; margin: 0 auto; padding: 0 1.25rem; }
+a { color: var(--accent); }
+h1 { font-size: 2.5rem; line-height: 1.1; }
+h2 { font-size: 1.75rem; margin-bottom: 1rem; }
+.section { padding: 3rem 0; }
+.header { position: sticky; top: 0; background: var(--bg); border-bottom: 1px solid var(--border); z-index: 10; }
+.nav { display: flex; align-items: center; gap: 1rem; padding-top: .75rem; padding-bottom: .75rem; }
+.logo { font-size: 1.5rem; font-weight: 800; text-decoration: none; color: var(--text); }
+.logo span { color: var(--accent); }
+.menu-btn, .theme-btn { background: none; border: 1px solid var(--border); border-radius: 8px; font-size: 1.25rem; padding: .25rem .6rem; cursor: pointer; color: var(--text); }
+.theme-btn { margin-left: auto; }
+.nav-links { display: none; list-style: none; flex-direction: column; gap: .5rem; position: absolute; top: 100%; left: 0; right: 0; background: var(--bg); padding: 1rem 1.25rem; border-bottom: 1px solid var(--border); }
+.nav-links.open { display: flex; }
+.nav-links a { text-decoration: none; color: var(--text); font-weight: 600; }
+.nav-links a:hover { color: var(--accent); }
+.hero { display: grid; gap: 2rem; padding-top: 3rem; padding-bottom: 3rem; align-items: center; }
+.eyebrow { color: var(--accent); font-weight: 700; }
+.hero h2 { color: var(--accent); margin-bottom: .75rem; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.25rem; }
+.btn { display: inline-block; padding: .65rem 1.25rem; border-radius: 999px; text-decoration: none; font-weight: 700; border: 2px solid var(--accent); cursor: pointer; font-size: 1rem; }
+.btn-primary { background: var(--accent); color: #fff; }
+.btn-outline { color: var(--accent); background: transparent; }
+.hero-card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 2rem; text-align: center; }
+.avatar { width: 96px; height: 96px; margin: 0 auto 1rem; border-radius: 50%; background: var(--accent); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: 800; }
+.hero-card-name { font-weight: 800; font-size: 1.25rem; }
+.hero-card-role, .hero-card-note { color: var(--muted); }
+.about-list { list-style: none; margin-top: 1rem; }
+.about-list li { padding: .25rem 0; }
+.filter-buttons { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1rem; }
+.filter-btn { padding: .4rem .9rem; border-radius: 999px; border: 1px solid var(--border); background: var(--card); color: var(--text); cursor: pointer; }
+.filter-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+.skills-grid { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: .75rem; }
+.skills-grid li { background: var(--accent-soft); border-radius: 10px; padding: .75rem; text-align: center; font-weight: 600; }
+.skills-grid li.hidden { display: none; }
+.projects-grid { display: grid; gap: 1rem; }
+.project-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; }
+.project-card h3 { margin-bottom: .5rem; }
+.tags { color: var(--muted); font-size: .9rem; margin: .5rem 0; }
+.timeline-item { border-left: 3px solid var(--accent); padding: 0 0 1.5rem 1rem; margin-left: .25rem; }
+.timeline-item .date { color: var(--muted); font-size: .9rem; }
+form { display: grid; gap: .5rem; max-width: 560px; margin-top: 1rem; }
+label { font-weight: 600; }
+input, textarea { padding: .65rem; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); color: var(--text); font: inherit; width: 100%; }
+.form-error { color: #c0392b; min-height: 1.25em; }
+.form-success { color: #1e8449; min-height: 1.25em; }
+.footer { text-align: center; padding: 2rem 1rem; border-top: 1px solid var(--border); color: var(--muted); }
+/* Desktop */
+@media (min-width: 700px) {
+  .menu-btn { display: none; }
+  .nav-links { display: flex; position: static; flex-direction: row; gap: 1.25rem; padding: 0; border: none; margin-left: auto; }
+  .theme-btn { margin-left: 0; }
+  .hero { grid-template-columns: 1.4fr 1fr; }
+  .projects-grid { grid-template-columns: repeat(3, 1fr); }
+}
