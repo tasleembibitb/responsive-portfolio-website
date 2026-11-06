@@ -46,4 +46,11 @@ responsive-portfolio-website/
 
 - The profile visual is a "TB" initials placeholder — no photo file is used.
 - The contact form validates on the front end only; there is no backend yet. To receive real messages, connect it to Formspree or a backend later.
-- The Projects section links to the sibling projects in this repo: `../modern-landing-page/` and `../python-data-analysis/`.
+- The Projects section lists 7 projects, each linked to its live GitHub repository:
+  - [Responsive Portfolio Website](https://github.com/tasleembibitb/responsive-portfolio-website)
+  - [Smart Expense Tracker Web App](https://github.com/tasleembibitb/Smart-Expense-Tracker-Web-App)
+  - [Modern Landing Page](https://github.com/tasleembibitb/modern-landing-page)
+  - [Python Data Analysis](https://github.com/tasleembibitb/python-data-analysis)
+  - [Movie Recommendation (Python)](https://github.com/tasleembibitb/Movie-Recommendation)
+  - [Food Shop Website](https://github.com/tasleembibitb/Food-shop-website)
+  - [Typing Game](https://github.com/tasleembibitb/Typing-game)
